@@ -1,0 +1,27 @@
+.header-box{
+width: 90vw;
+margin-left: 5vw;
+
+position: relative;
+margin-bottom: 30px;
+}
+.imgheaderhome{
+    border-radius: 20px;
+    width: 90vw;
+    height: 25vh;
+    object-fit: cover;
+    filter : brightness(50%)
+}
+.text{
+    position:absolute;
+    font-size: 60px;
+    top:0;
+    width: 90vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+}
+

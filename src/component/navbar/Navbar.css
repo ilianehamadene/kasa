@@ -1,0 +1,20 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    color:  #FF6060;
+    font-size: 24px;
+}
+.nav-box{
+    display: flex;
+}
+.accueil{
+margin: 57px;
+}
+.apropos{
+    margin: 57px;
+    margin-right: 100px;
+}
+.logo{
+    width: 300px;
+    
+}

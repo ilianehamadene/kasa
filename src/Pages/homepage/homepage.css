@@ -1,0 +1,35 @@
+
+.imgcards{
+   width: 340px;
+    height:340px;
+    object-fit: cover;
+    filter : brightness(90%)
+}
+.card{
+    display: flex;
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.title-cards{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    color: white;
+    font-size: 20px;
+}
+
+.hey{
+    display: flex;
+    
+}
+.cards-holder{
+    background-color: #F7F7F7;
+    margin-left: 5vw;
+    width: 90vw;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+}

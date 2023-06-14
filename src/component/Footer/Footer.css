@@ -1,0 +1,12 @@
+.Footer-box{
+    background-color: black;
+    height: 200px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+.imgFooter{
+    width:300px;
+}
