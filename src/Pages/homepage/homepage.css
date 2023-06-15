@@ -5,6 +5,10 @@
     object-fit: cover;
     filter : brightness(90%)
 }
+.link-card-logement{
+    width:340px;
+    height:340px;
+}
 .card{
     display: flex;
     position: relative;
@@ -20,16 +24,33 @@
     font-size: 20px;
 }
 
-.hey{
-    display: flex;
-    
-}
+
 .cards-holder{
     background-color: #F7F7F7;
-    margin-left: 5vw;
+    margin: auto;
     width: 90vw;
     border-radius: 25px;
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .imgcards{
+        width: 90vw;
+         height:255px;
+     }
+     .cards-holder{
+        background-color: transparent;
+        margin: auto;
+    }
+
+    .title-cards{
+        position: absolute;
+        top: 85%;
+        left: 10%;
+        color: white;
+        font-size: 18px;
+    }
 }

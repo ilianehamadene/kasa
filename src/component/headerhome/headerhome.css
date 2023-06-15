@@ -1,6 +1,6 @@
 .header-box{
 width: 90vw;
-margin-left: 5vw;
+margin: auto;
 
 position: relative;
 margin-bottom: 30px;
@@ -24,4 +24,16 @@ margin-bottom: 30px;
     color: white;
    
 }
-
+@media screen and (max-width: 600px) {
+    .imgheaderhome{
+        border-radius: 20px;
+        width: 90vw;
+        height: 110px;
+        object-fit: cover;
+        filter : brightness(50%)
+    }
+    .text{
+        font-size: 24px;
+        height: 110px;
+    }
+}

@@ -5,7 +5,7 @@ import { datakasa } from '../../Data/data';
 import './fichelogement.css'
 import Carousel from '../../component/carousel/carousel.js'
 import Stars from "../../component/stars/stars";
-import Collapstest from "../../component/collaps/collapsunique";
+import Collaps from "../../component/collaps/collapsunique";
 
 
 const Fichelogement = () =>{
@@ -53,7 +53,7 @@ console.log(rate)
     </div>
     </div>
     <div>
-    <Collapstest props={picked}/>
+    <Collaps props={picked}/>
     </div>
     </div>
     )

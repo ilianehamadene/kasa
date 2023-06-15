@@ -38,9 +38,26 @@
     padding: 15px;
     padding-top: 30px;
     margin-top: 5px;
-
     color: #FF6060;
     background-color: #F6F6F6;
     font-size: 20px;
     margin-top: -15px;
+}
+@media  screen and (max-width: 600px ) {
+    .categories{
+        font-size: 13px;
+    }
+    .item-title{
+        height: 10px;
+    }
+    .accordeon{
+        width:90vw;
+       margin: auto;
+    }
+    .item-title{
+        margin-top: 20px;
+    }
+    .content-style{
+        font-size: 12px;
+    }
 }

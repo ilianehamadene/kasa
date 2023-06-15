@@ -23,8 +23,8 @@ function Collapstest({props}) {
        <div className="all-collaps">
        <div className="collaps">
        <div onClick={handleclick} className="btn">
-       <h2>description</h2>
-       <span>{btnState ? '-' : '+'}</span>
+       <p className='collaps-title'>Description</p>
+       <span className='collaps-title'>{btnState ? '-' : '+'}</span>
        </div>
        <div className={btnState ? 'active' : 'before'}>
                 <div className="equipement">
@@ -34,13 +34,13 @@ function Collapstest({props}) {
     </div>
     <div className="collaps">
         <div onClick={handleclick1} className="btn">
-            <h2>Equipements</h2>
-            <span>{btnState1 ? '-' : '+'}</span>
+            <p className='collaps-title'>Equipements</p>
+            <span className='collaps-title'>{btnState1 ? '-' : '+'}</span>
         </div>
     <div className={btnState1 ? 'active' : 'before'}>
     {props.equipments.map((item)=>(
         
-        <p>{item}</p>
+        <p className='equipement'>{item}</p>
         
         ))}
             </div>

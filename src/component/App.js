@@ -10,7 +10,7 @@ import Headerapropos from './headerabout/header-apropos.js'
 
 function App() {
   return (
-    <div>
+    <div style={{margin:'-10px'}}>
       <Navbar />
       <Routes>
         <Route path='/' element={<><Headerhome/><Homepage /></>} />

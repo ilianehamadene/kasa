@@ -2,7 +2,6 @@
     width:90vw;
     height:60vh;
     margin-left: 5vw;
-  
     border-radius: 20px;
     
 }
@@ -56,9 +55,6 @@ color: #FF6060;
     width:115px;
     height: 25px;
 }
-.btn{
-    background-color: #FF6060;
-}
 
 
 .all-collaps{
@@ -69,26 +65,25 @@ color: #FF6060;
     overflow: hidden;
 }
 .before{
-    margin-top: -10px;
-    background-color: #F6F6F6;
-    padding:10px;
-    z-index: 1;
-    width: 40vw;
-    opacity: 0;
+    display: none;
+   
 
 
 }
 .active { 
+    display: flex;
+    flex-direction:column;
     margin-top: -10px;
     background-color: #F6F6F6;
-    padding:10px;
     z-index: 1;
     width: 40vw;
    
     
 
 }
-
+.collaps-title{
+    margin:10px
+}
 .btn{
     position:relative;
     z-index: 200;
@@ -96,18 +91,96 @@ color: #FF6060;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    font-size: 18px;
     width: 40vw;
-    height: 5vh;
+    height: 52px;
     border-radius: 10px;
     color: #FFF;
 }
 
 .equipement{
-
-    padding-top: 25px;
+    margin:20px 10px 10px 10px;
+    font-size: 18px;
+    color: #FF6060;
 }
 
 .stars{
     margin: 30px;
 }
+
+.rate{
+    display: flex;
+    align-items: center;
+}
+.stars-size{
+    width: 24px;
+    margin: 2px;
+}
+
+/* -----------media-queries-------- */
+
+@media screen and (max-width: 600px) {
+    .info-principale{
+        flex-direction: column;
+    }
+    .all-collaps {
+     display:flex;
+     flex-direction: column;
+    }
+    .btn{
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+    }
+    .place {
+        font-size: 14px;
+    }
+    .collaps{
+        display: flex;
+        width: 100%;
+       flex-direction: column;
+        justify-content: center;
+    }
+    .tags-box{
+        font-size: 10px;
+        width:84px;
+        height: 18px;
+    }
+   .name-rate{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+   }
+   .active{
+    width: 90vw;
+   }
+   .stars-size{
+    width: 13px;
+}
+   .title{
+    font-size: 18px;
+   }
+   .title-place{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+   }
+   .ove{
+    height:255px;
+}
+    .name-host{
+        font-size: 12px;
+    }
+    .img-host{
+        width: 32px;
+        height: 32px;
+    }
+    .collaps-title{
+        font-size: 13px;
+    }
+    .equipement{
+        font-size: 12px;
+    }
+   }

@@ -1,4 +1,4 @@
-import { logDOM } from "@testing-library/react"
+
 import React from "react" 
 import {Link} from "react-router-dom"
 import './Navbar.css'
@@ -13,7 +13,7 @@ export default function Navbar(){
             <Link  to="/" style={{ all: 'unset' }}>Accueil</Link>
             </div>
             <div className="apropos">
-            <Link  to="/apropos" style={{ all: 'unset' }}>A propos</Link>
+            <Link  to="/apropos" style={{ all: 'unset' }}>A Propos</Link>
             </div>
             </div>
         </nav>
