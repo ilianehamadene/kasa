@@ -5,7 +5,7 @@ import './headerhome.css'
 function Headerhome() {
 	return (
 		<div className='header-box' >
-			<img className="imgheaderhome" src={img}></img>
+			<img className="imgheaderhome" alt="" src={img}></img>
 			<div className="text">Chez vous, partout et ailleurs</div>
 		</div>
 	)

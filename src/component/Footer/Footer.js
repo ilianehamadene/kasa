@@ -5,7 +5,7 @@ import './Footer.css'
 function Footer() {
 	return (
 		<div className='Footer-box' >
-			<img className="imgFooter" src={img}></img>
+			<img className="imgFooter" alt="" src={img}></img>
 		</div>
 	)
 }

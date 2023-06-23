@@ -1,6 +1,6 @@
 
-import { useParams } from "react-router-dom";
-import React, { useState } from "react" 
+import { useParams, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react" 
 import { datakasa } from '../../Data/data';
 import './fichelogement.css'
 import Carousel from '../../component/carousel/carousel.js'
@@ -9,19 +9,30 @@ import Collaps from "../../component/collaps/collapsunique";
 
 
 const Fichelogement = () =>{
+    const navigate = useNavigate();
     let {fid} = useParams()
 
-const picked = datakasa.find(({ id }) => id === fid);
+    useEffect(() => {
+        window.scrollTo(0,0)
+      },[])
 
-const slidePics = picked.pictures;
 
-const rate = picked.rating;
-console.log(rate)
+      const picked = datakasa.find(({ id }) => id === fid);
+      
+      const slidePics = picked.pictures;
+      
+      const rate = picked.rating;
+      
 
+      
+      if (picked === undefined) {
+          navigate("/erreur404", { state: { message: "Can't get data" } });
+      }
+      else{
 
  return(
     <div>
-     <div className="ove">    
+     <div className="ove top">    
      <Carousel slides={slidePics} />
     </div>
     <div className="info-principale">
@@ -34,7 +45,7 @@ console.log(rate)
         </div>
         <div className="tags">
             {picked.tags.map((item)=>(
-                <div className="tags-box">
+                <div className="tags-box" key={item}>
                     <p>{item}</p>
                 </div>
            ))}
@@ -45,7 +56,7 @@ console.log(rate)
         <div className="name-host">
             {picked.host.name}
         </div>
-        <img className="img-host" src={picked.host.picture} />
+        <img className="img-host" alt="" src={picked.host.picture} />
         </div>
         <div className="rate">
             <Stars props={rate}/>
@@ -58,5 +69,5 @@ console.log(rate)
     </div>
     )
 }
-
+}
 export default Fichelogement

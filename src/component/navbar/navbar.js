@@ -7,7 +7,7 @@ import logo from'./logo.png'
 export default function Navbar(){
     return (
         <nav className="Navbar">
-            <img className="logo" src={logo}></img>
+            <img className="logo" alt='' src={logo}></img>
             <div className="nav-box">
             <div className="accueil">
             <Link  to="/" style={{ all: 'unset' }}>Accueil</Link>

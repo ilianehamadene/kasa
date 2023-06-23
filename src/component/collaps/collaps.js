@@ -9,7 +9,7 @@ const [selected, setSelected] = useState(null)
 
 const toggle = (i) =>{
     
-    if (selected == i){
+    if (selected === i){
         return setSelected(null)
     }
     setSelected(i)
@@ -18,8 +18,8 @@ const toggle = (i) =>{
 
     return (
             <div className='accordeon'>
-                {aboutArray.map((item, i)=>(
-                    <div className='item'>
+                {aboutArray.map((item, i,)=>(
+                    <div className='item' key={item.aboutTitle}>
                         <div className='item-title' onClick={()=> toggle(i)}>
                             <p className='categories'>{item.aboutTitle}</p>
                             <span>{selected === i ? '-' : '+'}</span>

@@ -5,7 +5,7 @@ import '../headerhome/headerhome.css'
 function Headerapropos() {
 	return (
 		<div className='header-box' >
-			<img className="imgheaderhome" src={img}></img>
+			<img className="imgheaderhome" alt="" src={img}></img>
 		</div>
 	)
 }

@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 .ove{
     width:90vw;
     height:60vh;
@@ -119,7 +125,7 @@ color: #FF6060;
 
 /* -----------media-queries-------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .info-principale{
         flex-direction: column;
     }
@@ -182,5 +188,8 @@ color: #FF6060;
     }
     .equipement{
         font-size: 12px;
+    }
+    .arrow-collaps{
+        height: 10px;
     }
    }
