@@ -5,7 +5,8 @@ import { datakasa } from '../../Data/data';
 import './fichelogement.css'
 import Carousel from '../../component/carousel/carousel.js'
 import Stars from "../../component/stars/stars";
-import Collaps from "../../component/collaps/collapsunique";
+import Collaps from "../../component/collaps/Colaps";
+import Tags from "../../component/tags/tags";
 
 
 const Fichelogement = () =>{ 
@@ -37,13 +38,9 @@ const Fichelogement = () =>{
                 <div className="place">
                     {picked.location}
                 </div>
-                <div className="tags">
-                    {picked.tags.map((item)=>(
-                        <div className="tags-box" key={item}>
-                            <p>{item}</p>
-                        </div>
-                ))}
-                    </div>
+                <div>
+                    <Tags props={picked}/>
+                </div>
                 </div>
             <div className="name-rate">
                 <div className="name-img">
@@ -57,8 +54,9 @@ const Fichelogement = () =>{
                 </div>
             </div>
             </div>
-            <div>
-            <Collaps props={picked}/>
+            <div className='all-collaps'>
+            <Collaps props={[picked.description]} title={"Description"}/>
+            <Collaps props={picked.equipments} title={"Equipements"}/>
             </div>
             </div>
         )
