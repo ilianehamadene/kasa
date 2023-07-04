@@ -6,14 +6,15 @@ import logo from'./logo.png'
 
 export default function Navbar(){
     return (
+
         <nav className="Navbar">
             <img className="logo" alt='' src={logo}></img>
             <div className="nav-box">
             <div className="accueil">
-            <Link  to="/" style={{ all: 'unset' }}>Accueil</Link>
+            <Link  to="/" style={{ all: 'unset'}}>Accueil</Link>
             </div>
             <div className="apropos">
-            <Link  to="/apropos" style={{ all: 'unset' }}>A Propos</Link>
+            <Link  to="/apropos" style={{ all: 'unset'}}>A Propos</Link>
             </div>
             </div>
         </nav>

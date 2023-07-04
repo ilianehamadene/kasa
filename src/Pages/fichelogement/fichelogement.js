@@ -20,7 +20,7 @@ const Fichelogement = () =>{
             navigate("/erreur404");
         }
     },[]);
-
+ 
     try {
         const picked = datakasa.find(({ id }) => id === fid);
         const slidePics = picked.pictures;

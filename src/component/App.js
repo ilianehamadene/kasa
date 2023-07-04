@@ -11,12 +11,11 @@ import Headerapropos from './headerabout/header-apropos.js'
 function App() {
   return (
     <div style={{margin:'-10px'}}>
-      <Navbar />
       <Routes>
         <Route path='/' element={<><Headerhome/><Homepage /></>} />
         <Route path='/apropos' element={<><Headerapropos/><Apropos /></>} />
-        <Route path='*' element={<Erreur404 />} />
-        <Route path='/fichelogement/:fid' element={<Fichelogement />} />
+        <Route path='*' element={<><Navbar /><Erreur404 /></>} />
+        <Route path='/fichelogement/:fid' element={<><Navbar/><Fichelogement /></>} />
       </Routes>
       <Footer />
     </div>
